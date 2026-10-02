@@ -22,16 +22,13 @@ That purchase is the whole soundtrack, including the day and night pairs and the
 
 The game itself is a separate purchase: [Sea of Stars on Steam](https://store.steampowered.com/app/1244090/Sea_of_Stars/).
 
+## Windows
+
+Unzip the [Windows build](https://github.com/BI-Blitzer/solstice-amulet/releases/download/v1.0.0/SolsticeAmulet-windows.zip) and run `SolsticeAmulet.exe` from the `SolsticeAmulet` folder.
+
 ## Run it
 
-Python 3.11 or newer.
-
-```
-pip install -r requirements.txt
-python player.py
-```
-
-By default the player looks in:
+The player looks in:
 
 ```
 C:\Program Files (x86)\Steam\steamapps\music\Sea of Stars - OST
@@ -40,6 +37,13 @@ C:\Program Files (x86)\Steam\steamapps\music\Sea of Stars - OST
 If Steam keeps the soundtrack somewhere else, pass that folder:
 
 ```
+SolsticeAmulet.exe --library "D:\Music\Sea of Stars - OST"
+```
+
+From source, with Python 3.11 or newer:
+
+```
+pip install -r requirements.txt
 python player.py --library "D:\Music\Sea of Stars - OST"
 ```
 

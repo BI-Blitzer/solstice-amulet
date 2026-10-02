@@ -2,7 +2,11 @@
 
 Local drafts. Nothing here has been posted.
 
-Hold all three until the repository is public. This commit is only on this machine, and there is no GitHub remote yet. Replace every `[repo URL]` with the real link. Attach the stills in this order, then a few seconds of the amulet turning if you have the clip:
+Repository: https://github.com/BI-Blitzer/solstice-amulet
+
+Windows build: https://github.com/BI-Blitzer/solstice-amulet/releases/download/v1.0.0/SolsticeAmulet-windows.zip
+
+Attach the stills in this order, then [screenshots/turn.mp4](screenshots/turn.mp4). The clip is silent, so the soundtrack stays out of the file.
 
 ![Day](screenshots/day.png)
 
@@ -22,7 +26,7 @@ Use this on your own account. It is short enough for a standard post.
 Unofficial player for the Sea of Stars soundtrack. Day and Night stay on the same beat. Turn the amulet and only the volume moves. It plays your Steam copy.
 
 https://store.steampowered.com/app/2550490/Sea_of_Stars__OST/
-[repo URL]
+https://github.com/BI-Blitzer/solstice-amulet
 ```
 
 Attach these stills in this order.
@@ -32,6 +36,8 @@ Attach these stills in this order.
 ![Halfway. Day and night are even.](screenshots/mid.png)
 
 ![Night. The amulet sits at the moon.](screenshots/night.png)
+
+Then attach [screenshots/turn.mp4](screenshots/turn.mp4).
 
 ---
 
@@ -51,7 +57,8 @@ https://store.steampowered.com/app/2550490/Sea_of_Stars__OST/
 
 I am not with Sabotage, and the pictures are fan paintings rather than game assets. The code is MIT.
 
-[repo URL]
+https://github.com/BI-Blitzer/solstice-amulet
+Windows build: https://github.com/BI-Blitzer/solstice-amulet/releases/download/v1.0.0/SolsticeAmulet-windows.zip
 ```
 
 Attach the same three stills, in the same order.
@@ -61,6 +68,8 @@ Attach the same three stills, in the same order.
 ![Halfway. Day and night are even.](screenshots/mid.png)
 
 ![Night. The amulet sits at the moon.](screenshots/night.png)
+
+Then attach [screenshots/turn.mp4](screenshots/turn.mp4).
 
 ---
 
@@ -100,21 +109,20 @@ https://store.steampowered.com/app/2550490/Sea_of_Stars__OST/
 The game is a separate purchase:
 https://store.steampowered.com/app/1244090/Sea_of_Stars/
 
-How to run it
+How to run it on Windows
 
-The player is a Python program. You need Python 3.11 or newer.
-
-1. Download the project: [repo URL]
-2. In that folder, run: pip install -r requirements.txt
-3. Run: python player.py
+1. Download the zip: https://github.com/BI-Blitzer/solstice-amulet/releases/download/v1.0.0/SolsticeAmulet-windows.zip
+2. Unzip it and run SolsticeAmulet.exe from the SolsticeAmulet folder
 
 It looks in the usual Steam music folder:
 
 C:\Program Files (x86)\Steam\steamapps\music\Sea of Stars - OST
 
-If your album lives somewhere else:
+If your album lives somewhere else, start it with that folder:
 
-python player.py --library "D:\Music\Sea of Stars - OST"
+SolsticeAmulet.exe --library "D:\Music\Sea of Stars - OST"
+
+From source, the project is at https://github.com/BI-Blitzer/solstice-amulet. You need Python 3.11 or newer. In that folder, run pip install -r requirements.txt and then python player.py. The same --library flag works there.
 
 Controls
 

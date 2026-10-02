@@ -24,8 +24,14 @@ import miniaudio
 import numpy as np
 from PIL import Image, ImageTk
 
+def resource_root() -> Path:
+    if getattr(sys, "frozen", False):
+        return Path(sys._MEIPASS)
+    return Path(__file__).resolve().parent
+
+
 LIBRARY = Path(r"C:\Program Files (x86)\Steam\steamapps\music\Sea of Stars - OST")
-SKIN = Path(__file__).resolve().parent / "skin"
+SKIN = resource_root() / "skin"
 RATE = 48000
 RAMP_SEC = 1.8
 PREFIX = re.compile(r"^\d+-\d+_")
@@ -42,7 +48,7 @@ HOVER = "#241c38"
 FAINT = "#5a546c"
 FAINT_HOT = "#8a849c"
 STEAM_URL = "https://store.steampowered.com/app/2550490/Sea_of_Stars__OST/"
-GIT_URL = "https://github.com/BI-Blitzer"
+GIT_URL = "https://github.com/BI-Blitzer/solstice-amulet"
 
 
 @dataclass(frozen=True)

@@ -4,6 +4,12 @@ An unofficial player for the day and night arrangements in the [Sea of Stars](ht
 
 In the game, once you have the Solstice Amulet, outdoor music keeps both arrangements running and only the volumes move. This player does the same thing on your own copies of the tracks. Drag the amulet from Day toward Night and both stems stay on the same beat.
 
+![Day. The amulet sits at the sun.](screenshots/day.png)
+
+![Halfway. Day and night are even.](screenshots/mid.png)
+
+![Night. The amulet sits at the moon.](screenshots/night.png)
+
 Sea of Stars is a game by [Sabotage Studio](https://sabotagestudio.com/). The music is by Eric W. Brown and the soundtrack's guest composers. This project is not affiliated with or endorsed by them.
 
 ## Buy the soundtrack

@@ -621,9 +621,12 @@ class App(tk.Tk):
         self.night_bg: np.ndarray | None = None
         self.bg_photo: ImageTk.PhotoImage | None = None
         self.icon_photo: ImageTk.PhotoImage | None = None
-        mark = ImageTk.PhotoImage(Image.open(SKIN / "amulet-day.png").resize((32, 32), Image.Resampling.NEAREST))
-        self.iconphoto(True, mark)
-        self._mark = mark
+        mark_image = Image.open(SKIN / "amulet-icon.png").convert("RGBA")
+        self._marks = [
+            ImageTk.PhotoImage(mark_image.resize((size, size), Image.Resampling.NEAREST))
+            for size in (16, 32, 48, 64)
+        ]
+        self.iconphoto(True, *self._marks)
 
         self.canvas = tk.Canvas(self, bg=INK, highlightthickness=0, bd=0)
         self.canvas.pack(fill="both", expand=True)
